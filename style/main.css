@@ -278,6 +278,10 @@ abbr {
   font-size: 1rem;
 }
 
+.footer h2{
+  text-transform: uppercase;
+}
+
 .footer__links {
   list-style: none;
 }
@@ -287,6 +291,10 @@ abbr {
   display: block;
   font-weight: 600;
   text-decoration: none;
+}
+
+.footer__links a:hover{
+  color: white;
 }
 
 @media screen and (min-width: 64rem) {
@@ -339,5 +347,27 @@ abbr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+  }
+
+  .last-articles__thumbs{
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer .container{
+    display: flex;
+  }
+
+  .footer .container > * {
+    margin: 2rem;
+  }
+
+  .footer__links {
+    margin: 0;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .footer__links a {
+    width: 150%;
   }
 }
