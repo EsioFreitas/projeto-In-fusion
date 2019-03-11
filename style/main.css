@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   font-family: "Open sans", sans-serif;
@@ -14,33 +15,33 @@ abbr {
 }
 
 .container {
-  margin: 0 .5rem;
-  padding: 0 .5rem;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
-.btn{
-    padding: 1rem 2.5rem;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    margin-right: 1rem;
-    display: inline-block;
-    transition: background .5s;
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  transition: background 0.5s;
 }
 
-.btn:hover{
-    background-color: #929da5;
+.btn:hover {
+  background-color: #929da5;
 }
 
-.btn-primary{
-    background-color: #69c6ae;
-    color: white;
+.btn-primary {
+  background-color: #69c6ae;
+  color: white;
 }
 
-.btn-secundary{
-    background-color: #455357;
-    color: white;
+.btn-secundary {
+  background-color: #455357;
+  color: white;
 }
 
 .main-header__title {
@@ -181,104 +182,148 @@ abbr {
   font-weight: normal;
 }
 
-.main-content{
-    background-color: #f8f9f9;
-    padding: 1.25rem 0 5rem;
-    border-top: 1px solid #e3e3e3; 
+.main-content {
+  background-color: #f8f9f9;
+  padding: 1.25rem 0 5rem;
+  border-top: 1px solid #e3e3e3;
 }
 
-.main-content h3{
-    color: #737c85;
-    font-size: 1.3rem;
-    padding-top: 2.5rem;
-    font-weight: 400;
+.main-content h3 {
+  color: #737c85;
+  font-size: 1.3rem;
+  padding-top: 2.5rem;
+  font-weight: 400;
 }
 
-.main-content p{
-    color: #929da5;
-    font-size: 1rem;
-    word-spacing: 3px;
+.main-content p {
+  color: #929da5;
+  font-size: 1rem;
+  word-spacing: 3px;
 }
 
-.last-articles{
-
+.last-articles {
 }
 
-.last-articles__title{
-    background-color: #63c6ae;
-    padding: 5px 0;
+.last-articles__title {
+  background-color: #63c6ae;
+  padding: 5px 0;
 }
 
-.last-articles__title h2{
-    font-size: 1.5rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 400;
+.last-articles__title h2 {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.last-articles__thumbs{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: auto;
-    grid-gap: 0;
+.last-articles__thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 0;
 }
 
-.last-articles__thumbs img{
-    display: block;
-    width: 100%;
+.last-articles__thumbs img {
+  display: block;
+  width: 100%;
 }
 
-.laptop-slide{
+.laptop-slide {
   background-color: #242a2c;
   padding: 7.5rem 0 6.25rem;
   width: 100%;
   overflow: auto;
 }
 
-.laptop-slide__slideshow{
+.laptop-slide__slideshow {
   white-space: nowrap;
 }
 
-.laptop-slide__slideshow figure{
+.laptop-slide__slideshow figure {
   display: inline-block;
 }
 
-.quote{
+.quote {
   background-color: #63c6ae;
   padding: 5rem 0;
   border-bottom: 1rem solid #48b9a1;
   color: white;
 }
 
-.quote h2{
+.quote h2 {
   font-size: 1.8rem;
   font-style: italic;
   font-weight: normal;
 }
 
-.quote figcaption{
+.quote figcaption {
   font-size: 1.2rem;
   text-align: center;
 }
 
-.no-js .quote figure + figure{
+.no-js .quote figure + figure {
   margin-top: 5rem;
 }
 
-.footer{
+.footer {
   background-color: #242a2c;
   padding: 3.2rem 0 5rem;
   color: #454e51;
   font-size: 1rem;
 }
 
-.footer__links{
+.footer__links {
   list-style: none;
 }
 
-.footer__links a{
+.footer__links a {
   color: #454e51;
   display: block;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media screen and (min-width: 64rem) {
+  .main-header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+  }
+
+  .main-header__title {
+    width: 25%;
+    box-sizing: border-box;
+  }
+
+  .main-header__btn {
+    display: none;
+  }
+
+  .main-header__nav {
+    float: left;
+    clear: none;
+    width: 75%;
+    max-width: 800px;
+  }
+
+  .main-header__nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .main-header__nav li {
+    border: none;
+    height: 100%;
+  }
+
+  .main-header__nav a {
+    background-color: white;
+    height: 2rem;
+  }
 }
