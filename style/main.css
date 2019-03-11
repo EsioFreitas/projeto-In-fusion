@@ -70,6 +70,11 @@ abbr {
 }
 
 .main-header__btn {
+  float: right;
+  margin: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
 }
 
 .main-header__nav {
