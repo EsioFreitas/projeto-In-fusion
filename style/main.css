@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Open sans", sans-serif;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 img {
@@ -10,6 +11,11 @@ img {
 
 abbr{
     text-decoration: none !important;
+}
+
+.container{
+    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 .main-header__title {
@@ -108,4 +114,49 @@ abbr{
 .hero a:hover{
     border-color: #fff5;
     background-color: #0008;
+}
+
+.people-cards{
+ margin: 2.5rem;
+}
+
+.people-cards__card{
+    margin: 1rem;
+}
+
+.people-cards__card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.people-cards__card:hover .people-cards__content,
+.people-cards__card:hover .people-cards__content h2{
+    color: #63c6ae;
+}
+
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);
+}
+
+.people-cards__img{
+    width: 100%;
+}
+
+.people-cards__avatar{
+    margin: -55px auto;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.people-cards__content{
+    padding: 2.5rem 1.5rem .6rem;
+    border-left: 5px solid #dbe1e7;
+    text-align: center;
+    color: #929da5;
+}
+
+.people-cards__content h2{
+    color: #737c85;
+    font-weight: normal;
 }
