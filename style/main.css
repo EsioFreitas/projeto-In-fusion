@@ -264,3 +264,21 @@ abbr {
 .no-js .quote figure + figure{
   margin-top: 5rem;
 }
+
+.footer{
+  background-color: #242a2c;
+  padding: 3.2rem 0 5rem;
+  color: #454e51;
+  font-size: 1rem;
+}
+
+.footer__links{
+  list-style: none;
+}
+
+.footer__links a{
+  color: #454e51;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
