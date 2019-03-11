@@ -4,7 +4,12 @@ body {
   box-sizing: border-box;
 }
 
-.main-header {
+img {
+    max-width: 100%;
+}
+
+abbr{
+    text-decoration: none !important;
 }
 
 .main-header__title {
@@ -49,4 +54,58 @@ body {
 
 .main-header__nav a:hover{
     color: #63c6ae;
+}
+
+.hero{
+    background-image: linear-gradient(45deg, white 50%, transparent 50%),
+                      linear-gradient(-45deg, white 50%, transparent 50%),
+                      url('../img/01.jpg');
+    background-position: left calc(50% + 20px) bottom,
+                         left calc(50% - 20px) bottom,
+                         center;
+    background-size: 40px 40px, 
+                     40px 40px, 
+                     cover;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    text-transform: uppercase;
+    background-color: #63c6ae;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.9rem 1.25rem; 
+}
+
+.hero p{
+    background-color: #242a2c;
+    margin: 0.3rem 1.9rem 2.2rem;
+    color: white;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+.hero a {
+    border:  1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .2);
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.hero a:hover{
+    border-color: #fff5;
+    background-color: #0008;
 }
