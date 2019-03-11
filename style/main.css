@@ -227,3 +227,40 @@ abbr {
     display: block;
     width: 100%;
 }
+
+.laptop-slide{
+  background-color: #242a2c;
+  padding: 7.5rem 0 6.25rem;
+  width: 100%;
+  overflow: auto;
+}
+
+.laptop-slide__slideshow{
+  white-space: nowrap;
+}
+
+.laptop-slide__slideshow figure{
+  display: inline-block;
+}
+
+.quote{
+  background-color: #63c6ae;
+  padding: 5rem 0;
+  border-bottom: 1rem solid #48b9a1;
+  color: white;
+}
+
+.quote h2{
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.quote figcaption{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.no-js .quote figure + figure{
+  margin-top: 5rem;
+}
