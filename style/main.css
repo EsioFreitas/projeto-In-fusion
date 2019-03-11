@@ -45,8 +45,14 @@ abbr {
   color: white;
 }
 
+.js .main-header{
+  position: fixed;
+  width: 100%;
+}
+
 .main-header{
   width: 100%;
+  background-color: white;
 }
 
 .main-header__title {
@@ -302,7 +308,6 @@ abbr {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: white;
   }
 
   .main-header__title {
