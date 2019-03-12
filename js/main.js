@@ -9,8 +9,16 @@
         widthEnable: 1024
     })
 
-    var carousel = new Carousel({
+    var carouselImg = new Carousel({
         container: '.laptop-slide',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+
+    })
+
+    var carouselQuete = new Carousel({
+        container: '.quote__slideshow',
         itens: 'figure',
         btnPrev: '.prev',
         btnNext: '.next'
