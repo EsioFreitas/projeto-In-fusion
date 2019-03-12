@@ -8,4 +8,12 @@
         toggleBtn: '.main-header__btn',
         widthEnable: 1024
     })
+
+    var carousel = new Carousel({
+        container: '.laptop-slide',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+
+    })
 })()
